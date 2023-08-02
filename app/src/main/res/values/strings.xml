@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QuizApps
+    <string-array name="number_of_questions_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <!-- Add more options if needed -->
+    </string-array>
+    </string>
+
+</resources>

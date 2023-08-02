@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context=".AddQuestionActivity">
+    <EditText
+        android:id="@+id/questionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Question" />
+
+    <EditText
+        android:id="@+id/option1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Option 1" />
+    <EditText
+        android:id="@+id/option2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option1EditText"
+        android:layout_marginTop="16dp"
+        android:hint="Option 2" />
+    <EditText
+        android:id="@+id/option3EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option2EditText"
+        android:layout_marginTop="16dp"
+        android:hint="Option 3" />
+    <EditText
+        android:id="@+id/option4EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option3EditText"
+        android:layout_marginTop="16dp"
+        android:hint="Option 4" />
+
+    <!-- ... Add EditText elements for Option 2, Option 3, Option 4, and Correct Answer ... -->
+
+    <EditText
+        android:id="@+id/correctAnswerEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option4EditText"
+        android:layout_marginTop="16dp"
+        android:hint="Correct Answer" />
+
+    <Spinner
+        android:id="@+id/numberOfQuestionsSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/correctAnswerEditText"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/addQuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberOfQuestionsSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Add Question" />
+
+</RelativeLayout>
